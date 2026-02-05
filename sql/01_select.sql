@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Sélections simples (SELECT / FROM / WHERE)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 1. Afficher tous les voyageurs.
 SELECT * FROM Voyageur;
