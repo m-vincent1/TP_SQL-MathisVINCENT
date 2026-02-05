@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Opérations ensemblistes (UNION / INTERSECT / EXCEPT)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 49. Afficher la liste des régions des voyageurs ou des lieux de logement (UNION).
 SELECT region AS regions_ou_lieux FROM Voyageur WHERE region IS NOT NULL
