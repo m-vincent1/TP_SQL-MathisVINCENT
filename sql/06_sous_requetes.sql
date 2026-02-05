@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Sous-requêtes (EXISTS / IN / NOT IN / ANY / ALL)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 44. Afficher les voyageurs ayant fait un séjour dans les Alpes (EXISTS).
 SELECT v.*
@@ -40,7 +37,6 @@ SELECT * FROM Logement
 WHERE code NOT IN (SELECT DISTINCT codeLogement FROM Activite);
 
 -- 48. Afficher les voyageurs dont le nombre de séjours est supérieur à la moyenne.
--- (Utilisation de sous-requête agrégée)
 SELECT v.*, COUNT(s.idSejour) AS nombre_sejours
 FROM Voyageur v
 INNER JOIN Sejour s ON v.idVoyageur = s.idVoyageur
