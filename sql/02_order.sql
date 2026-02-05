@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Tri et limitation (ORDER BY / LIMIT)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 9. Afficher les voyageurs triés par nom alphabétique.
 SELECT * FROM Voyageur ORDER BY nom ASC;
