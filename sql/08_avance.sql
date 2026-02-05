@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Pour aller plus loin
 -- Base de données : Voyageur
--- ============================================================
 
 -- 52. Afficher les voyageurs et le nombre total de jours passés en séjour (fin - debut).
 SELECT v.idVoyageur, v.nom, v.prenom, SUM(s.fin - s.debut) AS jours_total
