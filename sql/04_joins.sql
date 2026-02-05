@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Jointures entre tables
 -- Base de données : Voyageur
--- ============================================================
 
 -- 16. Afficher le nom des voyageurs et le nom du logement de chacun de leurs séjours.
 SELECT v.nom AS voyageur_nom, l.nom AS logement_nom
@@ -99,15 +96,10 @@ WHERE s.idSejour IS NULL;
 
 -- 31. Donner la requête SQL permettant d'afficher :
 -- Note: La question 31 semble incomplète dans l'énoncé.
--- Cette requête affiche toutes les informations combinées
 SELECT v.nom AS voyageur, l.nom AS logement, l.lieu, s.debut, s.fin
 FROM Voyageur v
 INNER JOIN Sejour s ON v.idVoyageur = s.idVoyageur
 INNER JOIN Logement l ON s.codeLogement = l.code;
-
--- ============================================================
--- Conditions sur plusieurs tables (avec jointures + filtres)
--- ============================================================
 
 -- 32. Afficher les voyageurs ayant fait un séjour dans un logement dont la capacité est supérieure à 30.
 SELECT DISTINCT v.*
