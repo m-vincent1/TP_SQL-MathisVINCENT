@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Conjonction, disjonction et négation (AND / OR / NOT)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 12. Afficher les voyageurs habitant Corse ou Bretagne.
 SELECT * FROM Voyageur WHERE region = 'Corse' OR region = 'Bretagne';
