@@ -1,7 +1,4 @@
--- ============================================================
--- TP SQL : Agrégats (COUNT, AVG, MAX, MIN, SUM, GROUP BY, HAVING)
 -- Base de données : Voyageur
--- ============================================================
 
 -- 36. Compter le nombre total de voyageurs.
 SELECT COUNT(*) AS nombre_voyageurs FROM Voyageur;
